@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,7 +14,22 @@
     tools:context="com.gupta.gagan.build_it_bigger.MainActivity">
 
     <TextView
+        android:id="@+id/mtextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:text="@string/task"/>
+
+    <com.spark.submitbutton.SubmitButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/button"
+        android:text="@string/btn_name"
+        android:textColor="@color/white"
+        app:sub_btn_background="@color/colorAccent"
+        app:sub_btn_duration="1000"
+        app:sub_btn_line_color="@color/colorPrimaryDark"
+        app:sub_btn_ripple_color="@color/colorPrimary"
+        app:sub_btn_tick_color="@color/white"/>
+</LinearLayout>

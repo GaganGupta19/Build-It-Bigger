@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Build-It-Bigger</string>
+    <string name="app_name">Build It Bigger</string>
+    <string name="btn_name">Make me Laugh</string>
+    <string name="task">Press this button to see a joke!</string>
 </resources>
