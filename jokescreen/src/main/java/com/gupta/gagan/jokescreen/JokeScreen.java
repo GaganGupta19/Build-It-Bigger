@@ -20,7 +20,7 @@ public class JokeScreen extends AppCompatActivity {
         Typeface tf = Typeface.createFromAsset(getApplicationContext().getAssets(), "fonts/Inconsolata.otf");
         mJokeView = (TextView) findViewById(R.id.mJokeView);
         mJokeView.setTypeface(tf);
-        mJokeView.setText(new JokeGenerator().generateJoke());
+        mJokeView.setText(JokeGenerator.generateJoke());
         mJokeView.setTextSize(15);
     }
 }
