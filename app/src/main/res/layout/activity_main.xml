@@ -34,4 +34,5 @@
         app:sub_btn_line_color="@color/colorPrimaryDark"
         app:sub_btn_ripple_color="@color/colorAccent"
         app:sub_btn_tick_color="@color/colorAccent"/>
+
 </LinearLayout>
