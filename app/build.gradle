@@ -17,6 +17,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    productFlavors {
+        free {
+            applicationId "com.gupta.gagan.builditbigger.free"
+        }
+        paid {
+            applicationId "com.gupta.gagan.builditbigger.paid"
+        }
+    }
 }
 repositories {
     maven {
@@ -35,4 +43,5 @@ dependencies {
     compile 'com.google.code.findbugs:jsr305:2.0.1'
     testCompile 'junit:junit:4.12'
     compile project(path: ':backend', configuration: 'android-endpoints')
+    freeCompile 'com.google.android.gms:play-services-ads:9.6.1'
 }

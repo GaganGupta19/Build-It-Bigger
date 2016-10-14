@@ -2,4 +2,8 @@
     <string name="app_name">Build It Bigger</string>
     <string name="btn_name">Make me Laugh</string>
     <string name="task">Press this button to see a joke!</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="internet">No internet connection</string>
+    <string name="assert_reply">"Yes! Joke Received. It is really funny"</string>
 </resources>

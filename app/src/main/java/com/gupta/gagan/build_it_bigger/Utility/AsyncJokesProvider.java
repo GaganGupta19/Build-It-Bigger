@@ -5,6 +5,8 @@ import android.os.AsyncTask;
 import com.example.gagan.myapplication.backend.myApi.MyApi;
 import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.extensions.android.json.AndroidJsonFactory;
+import com.google.api.client.googleapis.services.AbstractGoogleClientRequest;
+import com.google.api.client.googleapis.services.GoogleClientRequestInitializer;
 
 import java.io.IOException;
 
@@ -32,10 +34,14 @@ public class AsyncJokesProvider {
         protected String doInBackground(Void... params) {
             if (myApiService == null) {
 
-                MyApi.Builder builder = new MyApi.Builder(
-                        AndroidHttp.newCompatibleTransport(),
-                        new AndroidJsonFactory(),
-                        null).setRootUrl(ROOT_URL);
+                MyApi.Builder builder = new MyApi.Builder(AndroidHttp.newCompatibleTransport(), new AndroidJsonFactory(), null)
+                        .setRootUrl(ROOT_URL)
+                        .setGoogleClientRequestInitializer(new GoogleClientRequestInitializer() {
+                            @Override
+                            public void initialize(AbstractGoogleClientRequest<?> abstractGoogleClientRequest) throws IOException {
+                                abstractGoogleClientRequest.setDisableGZipContent(true);
+                            }
+                        });
 
                 myApiService = builder.build();
             }

@@ -5,5 +5,5 @@ package com.gupta.gagan.build_it_bigger.Utility;
  */
 public class EndPoints {
 
-    public static final String ROOT_URL = "https://builditbigger8393.appspot.com/_ah/api/";
+    public static final String ROOT_URL = "https://build-it-bigger-77.appspot.com/_ah/api/";
 }
