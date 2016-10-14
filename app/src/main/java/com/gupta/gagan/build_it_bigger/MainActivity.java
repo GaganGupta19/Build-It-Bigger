@@ -9,11 +9,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity{
 
-    /*SubmitButton mButton;
-    TextView mTextView;
-    private ProgressBar spinner;*/
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
